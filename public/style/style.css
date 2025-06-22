@@ -1,0 +1,105 @@
+/*General*/
+
+:root {
+  --main-color: #21a48e;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+/*General*/
+/*Nav*/
+
+.navbar-expand-lg {
+  border-bottom: 2px solid rgba(207, 204, 204, 0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.navbar-collapse {
+  flex: 0;
+}
+
+.navbar-expand-lg .navbar-nav {
+  gap: 32px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+  width: 40px;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background-color: var(--main-color);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+    background-color: var(--main-color);
+    border-radius: 18px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+  }
+}
+
+/*Nav*/
+
+/*Header*/
+
+.main-header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/carriza-maiquez-RTdvy9izXvw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.main-header h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.main-header p {
+  font-size: 22px;
+  margin-bottom: 12px;
+  padding: 2%;
+}
+.main-header a {
+  padding: 18px;
+  color: white;
+  display: flex;
+  width: 180px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*Header*/
