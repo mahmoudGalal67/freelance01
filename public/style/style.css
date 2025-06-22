@@ -8,7 +8,9 @@ a {
   text-decoration: none;
   margin: 0;
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+}
 /*General*/
 /*Nav*/
 
@@ -103,3 +105,172 @@ a {
 }
 
 /*Header*/
+
+/*Info*/
+section.Info-section {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 48px 0;
+}
+.info {
+  padding: 0 5%;
+  margin-top: -34px;
+  background-color: white;
+  border: 1px solid lightgray;
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 14px 8px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -12px 14px 8px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 14px 8px -10px rgba(0, 0, 0, 0.75);
+}
+.info .item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: rgb(107, 104, 104);
+  padding: 16px;
+  max-width: 320px;
+}
+
+.info .item svg {
+  width: 80px;
+}
+
+/*Info*/
+
+/*about*/
+
+.section-title {
+  color: #2a8b8b;
+  font-weight: 600;
+  font-size: 2rem;
+  border-left: 4px solid #2a8b8b;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.image-accent {
+  background-color: #2a8b8b;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  bottom: -18px;
+  right: -18px;
+  transform: translate(-1rem, 1rem);
+}
+.text-muted-custom {
+  color: #6c757d;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.row .img-fluid {
+  margin-bottom: -24px;
+  margin-left: -24px;
+}
+
+/*about*/
+
+@media (max-width: 500px) {
+  .image-accent {
+    width: 80%;
+    height: 80%;
+  }
+  .row .img-fluid {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+/*makes Diffrent*/
+
+.dark-section {
+  position: relative;
+  background: url("../images/anna-keibalo-oc5Brib1dNY-unsplash.jpg")
+    center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.dark-section p {
+  max-width: 280px;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+.commitment-section {
+  position: relative;
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.commitment-section h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #2c7a7b;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.commitment-box {
+  max-width: 36rem;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
+  padding: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 10;
+}
+.teal-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #2c7a7b;
+  overflow: hidden;
+  z-index: 1;
+}
+.teal-bottom svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.carousel-dots {
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.carousel-dots .dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+.carousel-dots .active {
+  background-color: #2c7a7b;
+}
+.carousel-dots .inactive {
+  background-color: #d1d5db;
+}
+
+/*makes Diffrent*/
