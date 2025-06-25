@@ -1,5 +1,5 @@
 /*General*/
-
+@import url();
 :root {
   --main-color: #21a48e;
 }
@@ -9,9 +9,8 @@ a {
   margin: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 .main-title {
   color: var(--main-color);
 }
@@ -22,7 +21,7 @@ body {
 .navbar-expand-lg {
   border-bottom: 2px solid rgba(207, 204, 204, 0.7);
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
@@ -133,6 +132,7 @@ section.Info-section {
   margin-inline: auto;
   display: flex;
   justify-content: space-around;
+  border-radius: 50px;
   flex-wrap: wrap;
   gap: 18px;
   box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
@@ -173,7 +173,7 @@ section.Info-section {
   height: 400px;
   z-index: -1;
   position: absolute;
-  bottom: -18px;
+  bottom: -58px;
   right: -18px;
   transform: translate(-1rem, 1rem);
 }
