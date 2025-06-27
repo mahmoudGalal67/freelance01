@@ -9,6 +9,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -49,19 +53,19 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> About Us </a>
+              <a class="nav-link" href="#About"> About Us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Vision</a>
+              <a class="nav-link" href="#About">Our Vision</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Target Market</a>
+              <a class="nav-link" href="#Markets">Target Market</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Commitment</a>
+              <a class="nav-link" href="#Commitment">Our Commitment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Strength</a>
+              <a class="nav-link" href="#Strength">Our Strength</a>
             </li>
           </ul>
         </div>
@@ -69,11 +73,14 @@
     </nav>
     <header class="main-header">
       <main>
-        <h1>We are specialized in heigh precisio CNC marketing solutions</h1>
+        <h1>
+          We are specialized in <br />
+          heigh precisio CNC <br />
+          marketing solutions
+        </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima esse
-          dolores consectetur inventore unde explicabo libero nostrum numquam
-          nam aliquid?
+          Contact us for professional service , all products are <br />
+          manufactured under supervision of highly qualified.
         </p>
         <a href="#"><span>Contact Us</span> &rarr;</a>
       </main>
@@ -118,6 +125,7 @@
     <!-- Info -->
     <!-- About -->
     <div
+      id="About"
       class="container border border-primary my-5 p-4"
       style="border-color: #4a9a9a !important"
     >
@@ -207,7 +215,10 @@
       </div>
     </section>
 
-    <section class="commitment-section position-relative px-3 px-md-5">
+    <section
+      id="Commitment"
+      class="commitment-section position-relative px-3 px-md-5"
+    >
       <h3 class="font-roboto-slab">
         Our<br />
         <span>Commitment</span>
@@ -244,7 +255,7 @@
     </section>
     <!-- Makes diffrence -->
     <!-- Our strenght -->
-    <div class="container-lg strenght-wrapper">
+    <div id="Strength" class="container-lg strenght-wrapper">
       <div class="row text-white">
         <div
           class="col-md-4 d-flex align-items-center justify-content-center title-section"
@@ -294,7 +305,7 @@
     </div>
     <!-- Our strenght -->
     <!-- Industries -->
-    <div class="Industries container">
+    <div id="Markets" class="Industries container">
       <h2>
         Industries<br />
         We Serve
@@ -510,12 +521,21 @@
         $(".owl-carousel2").owlCarousel({
           items: 1,
           dots: true,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000, // 3 seconds
+          autoplayHoverPause: true, // pause on hover
         });
         $(".owl-carousel").owlCarousel({
           items: 3,
+          // loop: true,
+          // autoplay: true,
+          autoplayTimeout: 2000, // 3 seconds
+          autoplayHoverPause: true, // pause on hover
           responsive: {
             0: {
               items: 1,
+              margin: 0,
             },
             600: {
               items: 2,
