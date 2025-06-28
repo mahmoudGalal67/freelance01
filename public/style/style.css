@@ -18,8 +18,8 @@ a {
   margin: 0;
 }
 body {
-  /* font-family: "MyFont", sans-serif; */
-  font-family: "Poppins", sans-serif;
+  font-family: "MyFont", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 .main-title {
   color: var(--main-color);
@@ -297,17 +297,17 @@ section.Info-section {
 }
 .teal-bottom {
   width: 100%;
-  background-color: #2c7a7b;
+  background-color: #23a490;
   height: 480px;
   overflow: hidden;
   z-index: 1;
   position: relative;
 }
-.teal-bottom svg {
+.teal-bottom img.flotiing {
   position: absolute;
-  bottom: 0;
-  left: 12%;
-  width: 320px;
+  bottom: -5px;
+  left: 18%;
+  width: 240px;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
@@ -536,7 +536,7 @@ section.Info-section {
   position: relative;
 }
 
-.owl-stage-outer {
+.Industries .owl-stage-outer {
   margin-left: 22px;
 }
 
