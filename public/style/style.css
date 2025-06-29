@@ -306,7 +306,7 @@ section.Info-section {
 .teal-bottom img.flotiing {
   position: absolute;
   bottom: -5px;
-  left: 18%;
+  left: 2%;
   width: 240px;
   object-fit: contain;
   filter: brightness(0) invert(1);
