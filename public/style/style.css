@@ -244,15 +244,16 @@ section.Info-section {
   margin-bottom: -24px;
   margin-left: -24px;
 }
+.box-image-container {
+  position: relative;
+}
 
 /*about*/
 
 @media (max-width: 1400px) {
   .image-accent {
     width: 80% !important;
-    height: 75% !important;
-
-    bottom: -12px;
+    height: 95% !important;
   }
   .text-muted-custom {
     padding-inline: 8% !important;
@@ -261,8 +262,10 @@ section.Info-section {
 @media (max-width: 990px) {
   .image-accent {
     width: 80% !important;
-    height: 45% !important;
-    bottom: 45%;
+    height: 95% !important;
+  }
+  .about-us {
+    margin-top: 85px;
   }
 }
 
