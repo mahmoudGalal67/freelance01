@@ -19,6 +19,7 @@ a {
 }
 body {
   font-family: "MyFont", sans-serif;
+  overflow-x: hidden;
   /* font-family: "Poppins", sans-serif; */
 }
 .main-title {
@@ -91,7 +92,19 @@ body {
     justify-content: space-between;
   }
 }
-
+@media (max-width: 980px) {
+  .navbar > .container {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1400px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .navbar-expand-lg .navbar-nav {
+    gap: 18px;
+  }
+}
 /*Nav*/
 
 /*Header*/
@@ -234,15 +247,22 @@ section.Info-section {
 
 /*about*/
 
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
   .image-accent {
-    width: 70%;
-    height: 80%;
+    width: 80% !important;
+    height: 75% !important;
+
     bottom: -12px;
   }
-  .row .img-fluid {
-    margin-bottom: 0;
-    margin-left: 0;
+  .text-muted-custom {
+    padding-inline: 8% !important;
+  }
+}
+@media (max-width: 990px) {
+  .image-accent {
+    width: 80% !important;
+    height: 45% !important;
+    bottom: 45%;
   }
 }
 
@@ -273,11 +293,9 @@ section.Info-section {
   text-align: center;
 }
 .commitment-section .floating-carousel {
-  position: absolute;
-  transform: translateX(-50%);
-  z-index: 100;
-  left: 50%;
+  position: relative;
   top: -65px;
+  z-index: 100;
 }
 .commitment-section .mob {
   display: none;
@@ -293,7 +311,7 @@ section.Info-section {
 }
 .commitment-box {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   background: white;
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
   padding: 2% 14%;
@@ -321,24 +339,37 @@ section.Info-section {
   filter: brightness(0) invert(1);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
+  .teal-bottom {
+    height: 320px;
+  }
   .commitment-section h3 {
-    font-size: 38px;
+    font-size: 36px;
   }
   .commitment-box {
-    font-size: 18px;
-    width: 100%;
-  }
-  .commitment-section .mob {
-    display: block;
-  }
-  .commitment-section .desk {
-    display: none !important;
-  }
+    font-size: 22px;
+    padding: 2% 12%;
 
-  .teal-bottom svg {
-    width: 220px;
+    width: 85%;
   }
+}
+@media (max-width: 500px) {
+  .teal-bottom {
+    height: 400px;
+  }
+  .commitment-section h3 {
+    font-size: 34px;
+  }
+  .commitment-box {
+    font-size: 16px;
+    width: 85%;
+  }
+}
+.commitment-section {
+  padding-bottom: 0;
+}
+.teal-bottom svg {
+  width: 220px;
 }
 
 /*makes Diffrent*/
@@ -436,6 +467,12 @@ section.Info-section {
 @media (max-width: 767.98px) {
   .cards-container {
     flex-direction: column;
+  }
+  .card-item p {
+    margin-top: 0;
+  }
+  .strenght-wrapper {
+    margin-top: 0px;
   }
   .card-item {
     border-right: none;

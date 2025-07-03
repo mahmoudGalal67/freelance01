@@ -125,7 +125,7 @@
       class="container border border-primary my-5 p-4"
       style="border-color: #4a9a9a !important"
     >
-      <div class="row g-4">
+      <div class="row g-md-4 g-5">
         <div class="col-12 col-md-8">
           <h2 class="section-title">About Us</h2>
           <p class="text-muted-custom">
@@ -150,7 +150,7 @@
         </div>
       </div>
 
-      <div class="row g-4 mt-3 mt-md-4 align-items-center">
+      <div class="row g-4 mt-3 mt-md-5 align-items-center">
         <div class="col-12 col-md-6 order-2 order-md-1">
           <img
             src="https://storage.googleapis.com/a1aa/image/8572933d-1e74-4cdd-c8eb-ba4477e5f7a2.jpg"
@@ -223,30 +223,23 @@
       <div class="teal-bottom">
         <div class="desk floating-carousel">
           <div class="container owl-carousel owl-carousel2">
-            <div class="commitment-box mx-auto">
-              Our commitment is to understand and exceed the expectations of our
-              valued customers, while delivering high quality product, services,
-              and solutions to their most demanding requirements.
+            <div class="w-100 p-8">
+              <div class="commitment-box mx-auto">
+                Our commitment is to understand and exceed the expectations of
+                our valued customers, while delivering high quality product,
+                services, and solutions to their most demanding requirements.
+              </div>
             </div>
-            <div class="desk commitment-box mx-auto">
-              Finding new ways to always do better innovation continuous and it
-              is achieved by sharing ideas, knowledge, skills and experience to
-              solve our customer's needs
+            <div class="w-100">
+              <div class="commitment-box mx-auto">
+                Finding new ways to always do better innovation continuous and
+                it is achieved by sharing ideas, knowledge, skills and
+                experience to solve our customer's needs
+              </div>
             </div>
           </div>
         </div>
-        <div class="mob container owl-carousel owl-carousel2">
-          <div class="commitment-box mx-auto">
-            Our commitment is to understand and exceed the expectations of our
-            valued customers, while delivering high quality product, services,
-            and solutions to their most demanding requirements.
-          </div>
-          <div class="commitment-box mx-auto">
-            Finding new ways to always do better innovation continuous and it is
-            achieved by sharing ideas, knowledge, skills and experience to solve
-            our customer's needs
-          </div>
-        </div>
+
         <img class="flotiing" src="./public/images/automation.png" alt="" />
       </div>
     </section>
@@ -527,8 +520,8 @@
         $(".owl-carousel2").owlCarousel({
           items: 1,
           dots: true,
-          loop: true,
-          autoplay: true,
+          // loop: true,
+          // autoplay: true,
           autoplayTimeout: 2000, // 3 seconds
           autoplayHoverPause: true, // pause on hover
           center: true,
@@ -536,7 +529,7 @@
         $(".owl-carousel").owlCarousel({
           items: 3,
           loop: true,
-          // autoplay: true,
+          autoplay: true,
           autoplayTimeout: 2000, // 3 seconds
           autoplayHoverPause: true, // pause on hover
           responsive: {
