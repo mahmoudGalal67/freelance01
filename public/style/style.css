@@ -272,6 +272,16 @@ section.Info-section {
   padding-bottom: 6rem;
   text-align: center;
 }
+.commitment-section .floating-carousel {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 100;
+  left: 50%;
+  top: -65px;
+}
+.commitment-section .mob {
+  display: none;
+}
 .commitment-section h3 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
@@ -279,27 +289,26 @@ section.Info-section {
   line-height: 1.2;
   font-size: 64px;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 .commitment-box {
   margin: 0 auto;
   width: 70%;
   background: white;
   box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.075);
-  padding: 4%;
+  padding: 2% 14%;
   font-weight: 400 !important;
   position: relative;
   z-index: 10;
   font-size: 28px;
   line-height: 2.5;
-  border-radius: 12px;
   color: rgb(91 87 87);
+  border: 2px solid lightgray;
 }
 .teal-bottom {
   width: 100%;
   background-color: #23a490;
   height: 480px;
-  overflow: hidden;
   z-index: 1;
   position: relative;
 }
@@ -320,6 +329,13 @@ section.Info-section {
     font-size: 18px;
     width: 100%;
   }
+  .commitment-section .mob {
+    display: block;
+  }
+  .commitment-section .desk {
+    display: none !important;
+  }
+
   .teal-bottom svg {
     width: 220px;
   }
@@ -329,28 +345,42 @@ section.Info-section {
 /*Our strenght*/
 
 .strenght-wrapper {
-  background-color: rgba(0, 0, 0, 0.8);
   margin-top: 120px;
   margin-bottom: 36px;
+  padding: 0;
+}
+.strenght-wrapper .text-wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    /* Overlay */ url("../images/jon-flobrant-UjktArUqzTo-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  gap: 16%;
+  padding: 4%;
+  padding-bottom: 8%;
 }
 
 .title-section {
-  background-color: rgba(0, 0, 0, 0.7);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.2;
   padding: 3rem 1.5rem;
 }
+.strenght-wrapper h2 {
+  font-size: 42px;
+  font-weight: 600;
+}
 .title-section span {
   font-weight: 900;
   display: block;
 }
 .description {
-  font-size: 1.25rem;
-  padding: 2% 4%;
-
+  font-size: 1.4rem;
+  margin-right: 16%;
   line-height: 2.5;
+  font-weight: 600;
   margin-bottom: 5rem;
   font-family: "Roboto", sans-serif;
 }
@@ -359,6 +389,8 @@ section.Info-section {
   color: #3a3a3a;
   display: flex;
   border-top: 1px solid #bfbdb7;
+  margin-inline: 6%;
+  margin-top: -36px;
 }
 .card-item {
   flex: 1;
@@ -374,12 +406,12 @@ section.Info-section {
   border-right: none;
 }
 .card-img {
-  width: 160px;
-  height: 120px;
-  border: 2px solid #2a9d8f;
+  width: 180px;
+  height: 180px;
+  border: 6px solid #2a9d8f;
   margin-bottom: 1rem;
   position: relative;
-  top: -3rem;
+  top: -105px;
   object-fit: cover;
   box-shadow: 0 4px 6px rgb(0 0 0 / 0.3);
   transition: transform 0.3s ease;
@@ -387,15 +419,19 @@ section.Info-section {
 }
 .card-item p {
   font-size: 1.25rem;
+  padding-inline: 12%;
+  margin-top: -65px;
+  color: rgb(101, 97, 97);
+  font-size: 20px;
+  line-height: 65px;
 }
 .card-img:hover {
   transform: translateY(-5px);
 }
 .green-bar {
   background-color: #2a9d8f;
-  height: 220px;
   width: 100%;
-  margin-top: -1.5rem;
+  padding-bottom: 28px;
 }
 @media (max-width: 767.98px) {
   .cards-container {
@@ -411,6 +447,17 @@ section.Info-section {
   .card-img {
     top: 0;
     margin-bottom: 0.75rem;
+  }
+}
+@media (max-width: 900px) {
+  .strenght-wrapper .text-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 95px;
+  }
+  .description {
+    margin-right: 0;
   }
 }
 
