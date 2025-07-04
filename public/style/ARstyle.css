@@ -1,0 +1,33 @@
+.info .item p {
+  padding-left: 3rem !important;
+  padding-right: 0 !important;
+}
+
+.section-title {
+  width: fit-content;
+}
+
+.image-accent {
+  right: initial !important;
+  left: 3px;
+}
+
+.card {
+  align-items: end;
+}
+.card h3,
+.card p {
+  text-align: end;
+}
+
+footer ul {
+  padding-left: auto;
+  padding-right: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav.me-auto {
+    margin-left: auto !important;
+    margin-right: initial !important;
+  }
+}
