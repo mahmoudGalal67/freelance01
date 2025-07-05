@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./public/style/style.css" />
+    <title>Booking Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <style>
+    .bg-body-tertiary {
+      background-color: transparent !important;
+    }
+    body {
+      background-image: url("./public/images/voicu-apostol-_eYcfBKmzP8-unsplash.jpg");
+      background-position: center;
+      overflow-y: hidden;
+    }
+    h2.text-primary {
+      color: var(--main-color) !important;
+    }
+    button {
+      background-color: var(--main-color) !important;
+      border: none !important;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .card {
+      backdrop-filter: blur(10px); /* This creates the blur effect behind */
+      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    }
+    .form-label {
+      font-weight: 600;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+      border-color: #0b5ed7;
+    }
+    input[type="date"],
+    input[type="time"],
+    input[type="text"],
+    select.form-select {
+      border-radius: 0.375rem;
+      border: 1px solid #ced4da;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    select.form-select {
+      text-align: center;
+    }
+    input[type="date"]:focus,
+    input[type="time"]:focus,
+    input[type="text"]:focus,
+    select.form-select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+      outline: none;
+    }
+    @media (min-width: 992px) {
+      .navbar-nav.me-auto {
+        margin-left: auto !important;
+        margin-right: initial !important;
+      }
+    }
+  </style>
+  <body dir="rtl">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed">
+      <div class="container g-5">
+        <a href="./ARindex.html"
+          ><img src="./public/images/logo.png" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >الرئسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ARindex.html"> معلومات عنا </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">رؤيتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">السوق المستهدف</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">التزامنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">قوتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ARProfile.html">بروفايل</a>
+            </li>
+            <li class="nav-item special">
+              <a class="nav-link" href="./ARSiagnUp.html">انشاء حساب</a>
+            </li>
+            <li class="nav-item special">
+              <a class="nav-link" href="./ARSignIn.html"> تسجيل الدخول</a>
+            </li>
+            <li class="nav-item special lang">
+              <a class="nav-link" href="./index.html">عربي</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div
+        class="card shadow-sm p-4 w-100"
+        style="max-width: 480px; border-radius: 0.75rem"
+      >
+        <h2 class="mb-4 text-center fw-bold text-primary">حجز المصنع</h2>
+        <form class="booking-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">الاسم</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="ادخل الاسم كاملا"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="bookingDate" class="form-label">اليوم</label>
+            <input
+              type="date"
+              class="form-control"
+              id="bookingDate"
+              name="bookingDate"
+              required
+              min=""
+            />
+          </div>
+
+          <div class="row mb-3 g-3">
+            <div class="col-6">
+              <label for="timeFrom" class="form-label">من</label>
+              <input
+                type="time"
+                class="form-control"
+                id="timeFrom"
+                name="timeFrom"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <label for="timeTo" class="form-label">الي</label>
+              <input
+                type="time"
+                class="form-control"
+                id="timeTo"
+                name="timeTo"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="service" class="form-label">اختار الخدمة</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="" disabled selected>الخدمة</option>
+              <option value="With">بمواد</option>
+              <option value="Without">بدون مواد</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100 d-flex justify-content-center align-items-center gap-2"
+          >
+            <i class="fas fa-calendar-check"></i> احجز الان
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Set minimum date to today for date picker
+      const dateInput = document.getElementById("bookingDate");
+      const today = new Date().toISOString().split("T")[0];
+      dateInput.setAttribute("min", today);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  >
+</html>

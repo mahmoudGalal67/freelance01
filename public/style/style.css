@@ -445,6 +445,8 @@ section.Info-section {
   border-top: 1px solid #bfbdb7;
   margin-inline: 6%;
   margin-top: -36px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card-item {
   flex: 1;
